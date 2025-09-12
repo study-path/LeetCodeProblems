@@ -1,4 +1,4 @@
--- # Problem: https://leetcode.com/problems/combine-two-tables/description/
+-- # Problem: https://leetcode.com/problems/big-countries/
 
-select  firstName, lastName, city,  state from Person
-left join Address on Person.personId = Address.personId
+select name, population, area from World
+where area >= 3000000  or population >=25000000
